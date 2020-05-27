@@ -69,7 +69,7 @@ bool Enqueue(Queue* q, student st_data)
 	}
 }  
 ```   
-### 4. equeue: Dequeue(Queue* q, student* st_data)   
+### 4. Dequeue: Dequeue(Queue* q, student* st_data)   
 1. Empty인지 확인    
 2. Head index에서 데이터 retrieval  
 3. Head = Head + 1 (Head = (Head+1) % QSIZE)  
@@ -94,7 +94,7 @@ bool Dequeue(Queue* q, student* st_data)
 	}
 }  
 ```  
-## 그림으로 Ring_queue동작 확인  
+## C. 그림으로 Ring_queue동작 확인  
 ### 1) 초기상태> Head = 0, Tail = 0  
 ![1](https://user-images.githubusercontent.com/41607872/83040081-d730ad80-a079-11ea-8fd4-c871f294099b.jpg)  
 ### 2) Enqueue>  Head = 0, Tail = 1 ( 0-index에 "Jame"저장 / Tail 한칸 이동 )  
