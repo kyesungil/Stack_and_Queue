@@ -3,16 +3,16 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-// µ¥ÀÌÅÍ Å¸ÀÔ Á¤ÇÏ±â
+// ë°ì´í„° íƒ€ì… ì •í•˜ê¸°
 typedef int ElementType;
 
-// Node ¸¸µé±â
+// Node ë§Œë“¤ê¸°
 typedef struct tagNode
 {
 	ElementType Data;
 } Node;
 
-// Stack struct ¸¸µé±â(¿ë·®, top, ³ëµå)
+// Stack struct ë§Œë“¤ê¸°(ìš©ëŸ‰, top, ë…¸ë“œ)
 typedef struct Stack
 {
 	int capacity;
@@ -21,18 +21,17 @@ typedef struct Stack
 	
 } ArrayStack;
 
-// stack ÃÊ±âÈ­ ÇÔ¼ö
+// stack ì´ˆê¸°í™” í•¨ìˆ˜
 void AS_CreateStack(ArrayStack** Stack, int Capacity);
-// stack Á¾·á ¼Ò¸êÇÔ¼ö
+// stack ì¢…ë£Œ ì†Œë©¸í•¨ìˆ˜
 void AS_DestroyStack(ArrayStack* Stack);
-// stack push ÇÔ¼ö
+// stack push í•¨ìˆ˜
 void AS_Push(ArrayStack* Stack, ElementType Input_Data);
-// stack pop ÇÔ¼ö
+// stack pop í•¨ìˆ˜
 ElementType AS_Pop(ArrayStack* Stack);
-
-// stack full ÀÎÁö È®ÀÎÇÏ´Â ÇÔ¼ö
+// stack top ë°˜í™˜ í•¨ìˆ˜
 ElementType AS_Top(ArrayStack* Stack);
-// stack emptyÀÎÁö È®ÀÎÇÏ´Â ÇÔ¼ö
+// stack emptyì¸ì§€ í™•ì¸í•˜ëŠ” í•¨ìˆ˜
 bool AS_IsEmpty(ArrayStack* Stack);
-
+// stack node ê°œìˆ˜ ë°˜í™˜ í•¨ìˆ˜
 int AS_GetSize(ArrayStack* Stack);
