@@ -1,4 +1,10 @@
 # Stack_and_Queue
+# 1. Stack  
+# 1.1 ArrayStack 구성 필드
+- 용량  
+- 최상위 노드의 위치  
+- 노드 배열  
+
 # 2. Queue  
 # 2.2 Ring_Queue or Circle_queue  
 ## A. 구성  
